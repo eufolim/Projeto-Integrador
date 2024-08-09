@@ -1,4 +1,4 @@
-# 🕹️ | Projeto Integrador: Sistemas Web
+# 🕹️ | Projeto Integrador: Sistemas Web!
 Desenvolvimento de um jogo estilo quiz, com perguntas históricas sobre personagens e assuntos escolares.
 
 ## 👷🏽 Desenvolvedores:
