@@ -25,3 +25,5 @@ Clicar em executar e abrir o navegador em `http://127.0.0.1:5000`.
 Estudantes e estusiastas que queiram práticar seu conhecimento em história, tendo como objetivo, saber seu nível de acertividade sobre assuntos históricos.
 
 ## 🔭 Demonstração do projeto:
+
+:)
