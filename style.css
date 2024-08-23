@@ -1,4 +1,6 @@
 
+/* AJUSTES GERAIS */
+
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +41,10 @@ main{
     height: 100%;
 }
 
+
+
+/* PERSONAGEM */
+
 div.personagem{
     background-image: url(Midia/Imagens/personagem.mp4);
     height: 900px;
@@ -53,6 +59,10 @@ div.personagem{
     z-index: 3;
 }
 
+
+
+/* CONTEINER */
+
 div.conteinerLobby{
     height:100vh;
     width: 100vw;
@@ -62,6 +72,10 @@ div.conteinerLobby{
     z-index: 1;
     align-items: center;
 }
+
+
+
+/* TITULO */
 
 div.textoLobby{
     width: 100%;
@@ -87,6 +101,10 @@ p.pLobby{
     margin-top: -25px;
 }
 
+
+
+/* CAIXA VERMELHA */
+
 div.caixaLobby{
     height:550px;
     width: 1100px;
@@ -99,6 +117,8 @@ div.caixaLobby{
 }
 
 
+
+/* INPUTS */
 
 div.inputLobby{
     position: relative;
@@ -124,6 +144,7 @@ div.input{
     margin-left: 70px;
 }
 
+/* input nome */
 .inputTxt.nome{
     margin-top: 75px;
 }
@@ -139,6 +160,7 @@ div.input{
     outline: none;
 }
 
+/* input código */
 .inputTxt.cod{
     margin-top: 35px;
 }
@@ -154,6 +176,9 @@ div.input{
     outline: none;
 }
 
+
+
+/* BOTOES */
 
 .botoesLobby{
     position: relative;
