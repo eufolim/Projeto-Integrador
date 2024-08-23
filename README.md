@@ -26,4 +26,6 @@ Estudantes e estusiastas que queiram práticar seu conhecimento em história, te
 
 ## 🔭 Demonstração do projeto:
 
-:) https://www.figma.com/design/IYcyCOmWfgcPUc22fKrqoc/Untitled?node-id=0-1&t=D4qoLJbe5jh5b8wy-0
+figma: https://www.figma.com/design/IYcyCOmWfgcPUc22fKrqoc/Untitled?node-id=0-1&t=D4qoLJbe5jh5b8wy-0
+site frontend: https://testeweb-frontend.onrender.com/
+
