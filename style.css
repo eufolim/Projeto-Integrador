@@ -88,8 +88,91 @@ div.caixaLobby{
     width: 1100px;
     position: relative;
     display: flex;
+    flex-direction: column;
     z-index: 1;
     border-radius: 20px;
     background-image: url(Midia/Imagens/caixaLobby.png);
 }
 
+
+
+div.inputLobby{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    margin-bottom: 35px;
+}
+
+div.input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px
+}
+
+.inputTxt{
+    font-family: 'font2';
+    font-size: 25px;
+    color: var(--cor0);
+    margin-left: 70px;
+}
+
+.inputTxt.nome{
+    margin-top: 75px;
+}
+
+.inputNome{
+    position: relative;
+    width: 900px;
+    height: 60px;
+    background-color: rgba(255, 0, 255, 0);
+    border-radius: 40px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+}
+
+.inputTxt.cod{
+    margin-top: 35px;
+}
+
+.inputCod{
+    position: relative;
+    width: 900px;
+    height: 60px;
+    background-color: rgba(255, 0, 255, 0);
+    border-radius: 40px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+}
+
+
+.botoesLobby{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+
+button.lobby{
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.txtButton{
+    font-family: 'font2';
+    font-size: 30px;
+}
