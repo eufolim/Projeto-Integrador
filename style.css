@@ -26,6 +26,10 @@ body{
     background-image: url(Midia/Imagens/fundo.png);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 main{
