@@ -50,7 +50,7 @@ main{
 /* PERSONAGEM */
 
 div.personagem{
-    background-image: url(Midia/Imagens/personagem.mp4);
+    background-image: url(Midia/Imagens/personagem.gif);
     height: 900px;
     width: 600px;
     position: absolute;
@@ -224,4 +224,54 @@ button.lobby:hover{
 .txtButton{
     font-family: 'font2';
     font-size: 30px;
+}
+
+
+
+/* PT2 CHAT */
+
+.conteinerSala{
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#messages {
+    position: relative;
+    height: 200px;
+    width: 90%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#message-input {
+    position: relative;
+    width: 85%;
+    height: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 2px solid #ddd;
+}
+
+.hidden {
+    display: none;
 }

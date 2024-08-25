@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brainstormy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <main>
+    <main id="room-selection">
 
         <div class="personagem">
-            <img src="Midia/Imagens/personagem.gif" alt="Personagem animado" class="personagemGif">
+            <img src="Midia/Imagens/personagem.gif" class="personagemGif">
         </div>
 
         <div class="conteinerLobby">
@@ -28,19 +28,30 @@
                     </div>
                     <div class="input dois">
                         <p class="inputTxt cod">INSIRA O CÓDIGO DA SALA:</p>
-                        <input type="text" class="inputCod">
+                        <input type="text" class="inputCod" id="room-name">
                     </div>
                 </div>
 
                 <div class="botoesLobby">
-                    <button class="lobby jogar"><p class="txtButton">JOGAR AGORA</p></button>
-                    <button class="lobby criar"><p class="txtButton">CRIAR SUA SALA</p></button>
+                    <button class="lobby jogar"><p class="txtButton" id="join-room">JOGAR AGORA</p></button>
+                    <button class="lobby criar"><p class="txtButton" id="host-room">CRIAR SUA SALA</p></button>
                 </div>
 
             </div>
         </div>
         
     </main>
-    
+
+    <div class="conteinerSala">
+        <div id="chat-container" class="hidden">
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Digite sua mensagem">
+            <button id="send-message">Enviar</button>
+            <button id="leave-room">Sair da Sala</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
