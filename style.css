@@ -41,6 +41,10 @@ main{
     height: 100%;
 }
 
+.parallax{
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
 
 
 /* PERSONAGEM */
@@ -53,6 +57,7 @@ div.personagem{
     display: flex;
     left: 60%;
     top: 3%;
+    z-index: 3;
 }
 
 .personagemGif{
@@ -82,23 +87,22 @@ div.textoLobby{
     display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    justify-content: center;
+    margin: 40px 0px 15px 0px;
 }
 
 h1.h1Lobby{
     color: var(--cor2);
     font-size: 100px;
     font-family: 'font2';
+    height: 69%;
 }
 
 p.pLobby{
     font-family: 'font2';
     font-size: 20px;
     letter-spacing: 10px;
-    margin-top: -25px;
 }
 
 
@@ -126,7 +130,6 @@ div.inputLobby{
     flex-direction: column;
     width: 100%;
     height: 75%;
-    margin-bottom: 35px;
 }
 
 div.input{
@@ -134,8 +137,7 @@ div.input{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
-    padding-left: 20px;
+    height: 100%;
 }
 
 input[type=text]{
@@ -143,7 +145,6 @@ input[type=text]{
     font-family: 'font2';
     font-size: 20px;
 }
-
 
 .inputTxt{
     font-family: 'font2';
@@ -166,11 +167,12 @@ input[type=text]{
     margin-left: 50px;
     border: none;
     outline: none;
+    padding-left: 20px;
 }
 
 /* input código */
 .inputTxt.cod{
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .inputCod{
@@ -182,6 +184,7 @@ input[type=text]{
     margin-left: 50px;
     border: none;
     outline: none;
+    padding-left: 20px;
 }
 
 
@@ -191,15 +194,18 @@ input[type=text]{
 .botoesLobby{
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 50px;
-    justify-content: center;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -45px;
 }
 
 button.lobby{
     position: relative;
     display: flex;
-    width: 300px;
+    width: 600px;
     height: 50px;
     background-color: var(--cor0);
     border: none;
@@ -207,6 +213,12 @@ button.lobby{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 2px 2px 5px var(--cor3);
+}
+
+button.lobby:hover{
+    background-color: #a64043;
+    transition: .2s;
 }
 
 .txtButton{
