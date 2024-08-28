@@ -1,0 +1,18 @@
+estruturação de pastas
+
+codigos
+    |_ backend
+        |_ src
+            |_ server.js (fazer funcionar com nova estruturação de pastas)
+
+    |_ static
+        |_ arquivos.css
+
+    |_ templates
+        |_ arquivos.html
+        |_ js
+            |_ arquivos.js
+
+    main.py (routes back-end para front-end)
+
+README.md
