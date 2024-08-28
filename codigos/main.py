@@ -12,8 +12,8 @@ def index():
     return render_template('/index.html')
 
 @app.route('/sala', methods=['POST'])
-def sum():
-    return 1 + 1
+def sala():
+    return "sala fazer html"
 
 if __name__ == '__main__':
     app.run(debug=True)
