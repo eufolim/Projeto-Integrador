@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brainstormy</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
 </head>
 <body>
 
     <main id="room-selection">
 
         <div class="personagem">
-            <img src="Midia/Imagens/personagem.gif" class="personagemGif">
+            <img src="./static/Midia/Imagens/personagem.gif" class="personagemGif">
         </div>
 
         <div class="conteinerLobby">
@@ -32,25 +32,16 @@
                     </div>
                 </div>
 
-                <div class="botoesLobby">
+                <form action="{{ url_for('sala') }}" method="post" class="botoesLobby">
                     <button class="lobby jogar"><p class="txtButton" id="join-room">JOGAR AGORA</p></button>
-                    <button class="lobby criar"><p class="txtButton" id="host-room">CRIAR SUA SALA</p></button>
-                </div>
+                    <button class="lobby criar"><p class="txtButton" id="host-room">CRIAR SUA SALA</p></button>                  
+                </form>
 
             </div>
         </div>
         
     </main>
-
-    <div class="conteinerSala">
-        <div id="chat-container" class="hidden">
-            <div id="messages"></div>
-            <input type="text" id="message-input" placeholder="Digite sua mensagem">
-            <button id="send-message">Enviar</button>
-            <button id="leave-room">Sair da Sala</button>
-        </div>
-    </div>
-
+    
     <script src="./js/script.js"></script>
 
 </body>

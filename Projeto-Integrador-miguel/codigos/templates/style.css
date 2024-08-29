@@ -1,0 +1,279 @@
+
+/* AJUSTES GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor0: #B8B6AB;
+    --cor1: #9E896F; 
+    --cor2: #652224;
+    --cor3: #362E24;
+    --cor4: #0D0D0D;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url(Midia/Fontes/CenturyGothicPaneuropeanRegular.ttf);
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url(Midia/Fontes/CenturyGothicPaneuropeanBold.ttf);
+}
+
+body{
+    background-image: url(Midia/Imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax{
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+
+/* PERSONAGEM */
+
+div.personagem{
+    background-image: url(Midia/Imagens/personagem.gif);
+    height: 900px;
+    width: 600px;
+    position: absolute;
+    display: flex;
+    left: 60%;
+    top: 3%;
+    z-index: 3;
+}
+
+.personagemGif{
+    z-index: 3;
+}
+
+
+
+/* CONTEINER */
+
+div.conteinerLobby{
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+}
+
+
+
+/* TITULO */
+
+div.textoLobby{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 15px 0px;
+}
+
+h1.h1Lobby{
+    color: var(--cor2);
+    font-size: 100px;
+    font-family: 'font2';
+    height: 69%;
+}
+
+p.pLobby{
+    font-family: 'font2';
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+
+
+/* CAIXA VERMELHA */
+
+div.caixaLobby{
+    height:550px;
+    width: 1100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 20px;
+    background-image: url(Midia/Imagens/caixaLobby.png);
+}
+
+
+
+/* INPUTS */
+
+div.inputLobby{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+}
+
+div.input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+input[type=text]{
+    color: var(--cor2);
+    font-family: 'font2';
+    font-size: 20px;
+}
+
+.inputTxt{
+    font-family: 'font2';
+    font-size: 25px;
+    color: var(--cor0);
+    margin-left: 55px;
+}
+
+/* input nome */
+.inputTxt.nome{
+    margin-top: 75px;
+}
+
+.inputNome{
+    position: relative;
+    width: 900px;
+    height: 60px;
+    background-color: rgba(255, 0, 255, 0);
+    border-radius: 40px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+/* input código */
+.inputTxt.cod{
+    margin-top: 30px;
+}
+
+.inputCod{
+    position: relative;
+    width: 900px;
+    height: 60px;
+    background-color: rgba(255, 0, 255, 0);
+    border-radius: 40px;
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+
+
+/* BOTOES */
+
+.botoesLobby{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -45px;
+}
+
+button.lobby{
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 50px;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px var(--cor3);
+}
+
+button.lobby:hover{
+    background-color: #a64043;
+    transition: .2s;
+}
+
+.txtButton{
+    font-family: 'font2';
+    font-size: 30px;
+}
+
+
+
+
+/* ------------------------------------------------ */
+
+
+
+
+/* PT2 SALA */
+
+.conteinerSala{
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#messages {
+    position: relative;
+    height: 200px;
+    width: 90%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#message-input {
+    position: relative;
+    width: 85%;
+    height: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 2px solid #ddd;
+}

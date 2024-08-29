@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstormy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
+</head>
+<body>
+
+    <main class="room-game">
+
+        <div class="conteinerSala">
+            <div id="chat-container">
+                <div id="messages"></div>
+                <input type="text" id="message-input" placeholder="Digite sua mensagem">
+                <button id="send-message">Enviar</button>
+                
+                <form action="{{ url_for('index') }}" method="post">
+                    <button type="submit" id="leave-room">Sair da Sala</button>
+                </form>
+
+            </div>
+        </div>
+    
+    </main>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
